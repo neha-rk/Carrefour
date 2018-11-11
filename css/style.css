@@ -1,0 +1,216 @@
+body {
+  padding: 30px 0px;
+  background-color: #fff;
+  margin: 0 auto;
+  max-width:800px;
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
+  -webkit-text-stroke: 1px transparent; 
+}
+
+header{
+  width: 100%;
+}
+
+.main-logo {
+  float: left;
+  background-image: url(../images/Carrefour_Logo.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  width: 212px;
+  text-indent: -999px;
+  background-size: 160px;
+  display: block;
+  height: 54px;
+}
+
+.productSearch{
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.productSearch i{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px ;
+  color: #05549f;
+  cursor: pointer;
+  transition: 0.24s;
+}
+
+.productSearch input{
+  border:none;
+  font-size:14px;
+  color: #000000;
+  background-color: #f0f7fe;
+  border-radius: 4px;
+  transition: 0.24s;
+  width: 0px;
+  padding: 10px 10px 10px 35px;
+}
+
+.productSearch input.open{
+  border-color: #aaa;
+  outline: none;
+  width:200px;
+  padding: 10px;
+}
+
+.productSearch input.open + i{
+  padding: 10px ;
+  /*pointer-events: none;*/
+}
+
+.signin-form{
+  margin-top: 40px;
+}
+
+.signin-form form{
+  margin-top: 50px;
+}
+
+.signin-form .form-group.label-floating label.control-label,.signin-form .form-group.label-placeholder label.control-label{
+  font-size: 14px;
+  color: #dddddd;
+  padding-left: 10px;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.signin-form .form-group.label-floating.is-focused label.control-label,.signin-form .form-group.label-floating:not(.is-empty) label.control-label{
+  font-size: 14px;
+  color: #414141 !important;
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-style: italic;
+  top: -38px;
+  left: -5px;
+}
+
+.signin-form .form-group.label-floating label.error {
+  position: absolute;
+  top: -23px;
+  right: 2px;
+  color: #f6303f;
+  font-size: 12px;
+  background-color: #fff0f1;
+  padding: 3px 10px;
+}
+
+.signin-form .form-group .form-control {
+  margin-bottom: 4px;
+  padding: 10px;
+  line-height: 20px;
+  background-image: none !important;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  font-family: "Open Sans";
+}
+
+.signin-form .form-group.is-focused .form-control{
+  border: 1px solid #05549f;
+}
+
+.signin-form .form-group .form-control.error{
+  border: 1px solid #f6303f !important;
+}
+
+.signin-form .form-section{
+  position: relative;
+  height: auto;
+  width: 100%;
+  border: 3px solid #f6f6f6;
+  padding: 0px 45px 25px;
+  margin-bottom: 40px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.signin-form p{
+  font-size: 14px;
+  line-height: 22px;
+  color: #333333;
+  font-family: "Open Sans";
+}
+
+.signin-form h3{
+  font-size: 24px;
+  line-height: 22px;
+  color: #414141;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.signin-form .keep-logged-in{
+  font-size: 12px;
+  color: #414141;
+  font-family: "Open Sans";
+}
+
+.signin-form .checkbox .checkbox-material{
+  margin-right: 5px;
+}
+
+.signin-form .checkbox input[type=checkbox]:checked+.checkbox-material .check{
+  color: #05549f;
+  border-color: #05549f;
+}
+
+.signin-form .checkbox input[type=checkbox]:checked+.checkbox-material .check:before{
+  color: #05549f;
+}
+
+.signin-form .forgot-password{
+  font-size: 12px;
+  color: #05549f;
+  font-family: "Open Sans";
+  margin-top: 6px;
+}
+
+.signin-form button {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 3px;
+  background-color: #05549f;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.right{
+  float: right;
+  text-align: right;
+}
+hr.product-divide{
+  width: 800px;
+  height: 1px;
+  background-color: #f6f6f6;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.product-list .product-image{
+  border: 3px solid #f6f6f6;
+  max-width: 220px;
+  max-height: 220px;
+}
+
+.product-list .product-details{
+  width: 220px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.product-list .product-details .product-name{
+  font-size: 14px;
+  color: #414141;
+  font-family: "Open Sans";
+}
+
+.product-list .product-details .product-price{
+  font-size: 18px;
+  color: #000000;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
